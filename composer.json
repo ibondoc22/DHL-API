@@ -1,7 +1,7 @@
 {
-    "name": "ibondoc22/dhl_api",
+    "name": "ibondoc22/dhl-api-wrapper",
 
-    "description": "PHP library to communicate with the DHL XML Services.",
+    "description": "PHP library to communicate with the DHL XML Services. schemaVersion=\"4.0\"",
 
     "require": {
         "php": ">=5.3.0"
