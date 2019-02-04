@@ -161,6 +161,10 @@ abstract class Base extends BaseDataType
             $xmlWriter->writeElement($name, $this->$name);
         }
         $xmlWriter->endElement(); // End of Request
+        $xmlWriter->startElement('MetaData');
+            $xmlWriter->writeElement('SoftwareName', '3PV');
+            $xmlWriter->writeElement('SoftwareVersion', $this->_schemaVersion);
+        $xmlWriter->endElement(); // End of MetaData
         $xmlWriter->endElement(); // End of ServiceHeader
 
         foreach ($this->_bodyParams as $name => $infos) 
